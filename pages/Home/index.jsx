@@ -1,7 +1,5 @@
-import HomeContainer from '../../components/Home/HomeContainer'
+import HomeContainer from "../../components/Home/HomeContainer";
 
 export default function Home() {
-  return (
-    <HomeContainer/>
-  )
+  return <HomeContainer />;
 }

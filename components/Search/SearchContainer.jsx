@@ -1,7 +1,7 @@
-import SearchPresentation from './SearchPresentation'
+import SearchPresentation from "./SearchPresentation";
 
-const SearchContainer = () =>{
-  return <SearchPresentation/>
-}
+const SearchContainer = () => {
+  return <SearchPresentation />;
+};
 
-export default SearchContainer
+export default SearchContainer;
