@@ -3,13 +3,13 @@ import Link from "next/link";
 
 const HeaderPresentation = () => {
   return (
-    <div className="bg-black">
-      <header className="bg-black flex place-content-center shadow-md">
+    <div className="">
+      <header className="flex place-content-center shadow-md">
         {/* <h1 className="bg-gray-800">MYKITCHEN</h1> */}
         <Link href="/search" passHref className="">
           <svg
             viewBox="0 0 410.07 59.32"
-            className="h-6 w-auto my-5 bg-red-100"
+            className="h-6 w-auto my-5 fill-white"
             alt="MYKITCHEN"
           >
             <defs>
