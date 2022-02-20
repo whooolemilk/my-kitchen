@@ -7,7 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ocher: "#a48b78",
+        ocher: {
+          300: "#bca28c",
+          400: "#a48b78",
+        },
       },
     },
     fill: (theme) => ({

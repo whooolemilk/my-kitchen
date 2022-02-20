@@ -1,22 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import style from "./../../styles/Header.module.css";
+
 const HeaderPresentation = () => {
   return (
-    <div className="">
+    <div>
       <header className="flex place-content-center shadow-md">
-        {/* <h1 className="bg-gray-800">MYKITCHEN</h1> */}
-        <Link href="/search" passHref className="">
+        <Link href="/search" passHref>
           <svg
             viewBox="0 0 410.07 59.32"
-            className="h-6 w-auto my-5 fill-white"
+            className="h-6 w-auto my-5 fill-ocher-400 hover:fill-ocher-300"
             alt="MYKITCHEN"
           >
             <defs>
               <style
                 dangerouslySetInnerHTML={{
                   __html:
-                    "\n      .cls-1{font-size:52.38px;font-family:Volte-Bold, Volte;font-weight:700;letter-spacing:0.07em;}.cls-1,.cls-2{fill:#a48b78;}\n    ",
+                    "\n      .cls-1{font-size:52.38px;font-family:Volte-Bold, Volte;font-weight:700;letter-spacing:0.07em;}\n    ",
                 }}
               />
             </defs>
@@ -43,10 +44,9 @@ const HeaderPresentation = () => {
             </g>
           </svg>
         </Link>
-
         <div className="hidden md:block">
-          <nav className=" ">
-            <ul className=" ">
+          <nav>
+            <ul>
               <li>
                 <Link href="/search">探す</Link>
               </li>
