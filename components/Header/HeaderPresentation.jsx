@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Mykitchen from "../Icons/MYKITCHEN";
+import LogoMykitchen from "../Icons/LogoMykitchen";
 
 import style from "./../../styles/Header.module.css";
 
@@ -9,7 +9,7 @@ const HeaderPresentation = () => {
     <div>
       <header className="flex place-content-center shadow-md">
         <Link href="/search" passHref>
-          <Mykitchen />
+          <LogoMykitchen />
         </Link>
         <div className="hidden md:block">
           <nav>
