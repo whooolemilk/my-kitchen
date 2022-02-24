@@ -1,4 +1,4 @@
-const Mykitchen = () => {
+const LogoMykitchen = () => {
   return (
     <svg
       viewBox="0 0 410.07 59.32"
@@ -38,4 +38,4 @@ const Mykitchen = () => {
   );
 };
 
-export default Mykitchen;
+export default LogoMykitchen;
