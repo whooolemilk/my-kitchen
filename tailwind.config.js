@@ -16,6 +16,9 @@ module.exports = {
     fill: (theme) => ({
       ocher: theme("colors.ocher"),
     }),
+    borderRadius: {
+      large: "2.5rem",
+    },
   },
   plugins: [],
 };
