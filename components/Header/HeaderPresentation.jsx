@@ -7,7 +7,7 @@ import style from "./../../styles/Header.module.css";
 const HeaderPresentation = () => {
   return (
     <div>
-      <header className="flex place-content-center shadow-md">
+      <header className="flex place-content-center border-2 border-solid ">
         <Link href="/search" passHref>
           <LogoMykitchen />
         </Link>
