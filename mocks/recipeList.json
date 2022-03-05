@@ -1,6 +1,7 @@
 {
   "result": [
     {
+      "category": "dinner",
       "foodImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/66fc7af1b72e6955647b36f1434950cde8a37e14.26.2.3.2.jpg",
       "mediumImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/66fc7af1b72e6955647b36f1434950cde8a37e14.26.2.3.2.jpg?thum=54",
       "nickname": "ななじまる",
@@ -26,6 +27,7 @@
       "smallImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/66fc7af1b72e6955647b36f1434950cde8a37e14.26.2.3.2.jpg?thum=55"
     },
     {
+      "category": "dinner",
       "foodImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/aedd5fa798b463b0371dceb8e3d0f529e4dc1b48.79.2.3.2.jpg",
       "mediumImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/aedd5fa798b463b0371dceb8e3d0f529e4dc1b48.79.2.3.2.jpg?thum=54",
       "nickname": "く〜-Qoo-",
@@ -71,6 +73,7 @@
       "smallImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/aedd5fa798b463b0371dceb8e3d0f529e4dc1b48.79.2.3.2.jpg?thum=55"
     },
     {
+      "category": "dinner",
       "foodImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/eb2f27f434436225566c034083f98ddf2aaa0a50.50.2.3.2.jpg",
       "mediumImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/eb2f27f434436225566c034083f98ddf2aaa0a50.50.2.3.2.jpg?thum=54",
       "nickname": "ライム2141",
@@ -96,6 +99,7 @@
       "smallImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/eb2f27f434436225566c034083f98ddf2aaa0a50.50.2.3.2.jpg?thum=55"
     },
     {
+      "category": "dinner",
       "foodImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/9cb3993b8370b7f8e8c512f10b6a9f47fa1af00a.88.2.3.2.jpg",
       "mediumImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/9cb3993b8370b7f8e8c512f10b6a9f47fa1af00a.88.2.3.2.jpg?thum=54",
       "nickname": "*HARUKYO*",
