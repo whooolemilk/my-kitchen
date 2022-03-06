@@ -3,8 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const CardRecipeListContainer = ({ title, category }) => {
-  var topRecipeList = [];
+  var topRecipeList = []; // ホームに表示される２このレシピを入れておく配列
   var count = 0;
+
+  // recipeListの中から必要なデータをとってくる
   for (let i = 0; i < recipeList.result.length; i++) {
     if (recipeList.result[i].category == category && count < 2) {
       topRecipeList.push(recipeList.result[i]);
