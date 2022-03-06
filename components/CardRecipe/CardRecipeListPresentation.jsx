@@ -5,11 +5,12 @@ import { useState } from "react";
 
 const CardRecipeListPresentation = ({ title, category }) => {
   const topRecipeList = []; // ホームに表示される２このレシピを入れておく配列
-  const count = 0;
+  let count = 0;
+  const MAX_ORDER_NUM = 2;
 
   // recipeListの中から必要なデータをとってくる
   for (let i = 0; i < recipeList.result.length; i++) {
-    if (recipeList.result[i].category == category && count < 2) {
+    if (recipeList.result[i].category == category && count < MAX_ORDER_NUM) {
       topRecipeList.push(recipeList.result[i]);
       count++;
     }
@@ -32,7 +33,7 @@ const CardRecipeListPresentation = ({ title, category }) => {
                   width={200}
                   height={200}
                   objectFit="cover"
-                  alt=" "
+                  alt="Food Image"
                   className="rounded-2xl"
                 ></Image>
                 <p className="font-semibold text-sm line-clamp-2">

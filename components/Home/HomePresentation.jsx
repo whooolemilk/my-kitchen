@@ -1,4 +1,12 @@
+import AppBannerContainer from "../AppBanner/AppBannerContainer";
+import CardRecipeListContainer from "../CardRecipe/CardRecipeContainer";
+
 const HomePresentation = () => {
-  return <div></div>;
+  return (
+    <>
+      <AppBannerContainer />
+      <CardRecipeListContainer />
+    </>
+  );
 };
 export default HomePresentation;
