@@ -1,11 +1,10 @@
 import recipeList from "../../mocks/recipeList.json";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
-const CardRecipeListPresentation = ({ title, category }) => {
-  const topRecipeList = []; // ホームに表示される２このレシピを入れておく配列
-  const count = 0;
+const CardRecipeListPresentation = () => {
+  var topRecipeList = []; // ホームに表示される２このレシピを入れておく配列
+  var count = 0;
 
   // recipeListの中から必要なデータをとってくる
   for (let i = 0; i < recipeList.result.length; i++) {
