@@ -1,6 +1,10 @@
 import HomePresentation from "./HomePresentation";
 const HomeContainer = () => {
-  return <HomePresentation />;
+  return (
+    <>
+      <HomePresentation />
+    </>
+  );
 };
 
 export default HomeContainer;

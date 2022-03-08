@@ -12,13 +12,13 @@ module.exports = {
           400: "#a48b78",
         },
       },
+      borderRadius: {
+        large: "2.5rem",
+      },
     },
     fill: (theme) => ({
       ocher: theme("colors.ocher"),
     }),
-    borderRadius: {
-      large: "2.5rem",
-    },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };

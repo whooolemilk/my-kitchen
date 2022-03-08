@@ -1,0 +1,219 @@
+{
+  "result": [
+    {
+      "id": "30",
+      "name": "人気メニュー",
+      "url": "https://recipe.rakuten.co.jp/category/30/"
+    },
+    {
+      "id": "31",
+      "name": "定番の肉料理",
+      "url": "https://recipe.rakuten.co.jp/category/31/"
+    },
+    {
+      "id": "32",
+      "name": "定番の魚料理",
+      "url": "https://recipe.rakuten.co.jp/category/32/"
+    },
+    {
+      "id": "33",
+      "name": "卵料理",
+      "url": "https://recipe.rakuten.co.jp/category/33/"
+    },
+    {
+      "id": "14",
+      "name": "ご飯もの",
+      "url": "https://recipe.rakuten.co.jp/category/14/"
+    },
+    {
+      "id": "15",
+      "name": "パスタ",
+      "url": "https://recipe.rakuten.co.jp/category/15/"
+    },
+    {
+      "id": "16",
+      "name": "麺・粉物料理",
+      "url": "https://recipe.rakuten.co.jp/category/16/"
+    },
+    {
+      "id": "17",
+      "name": "汁物・スープ",
+      "url": "https://recipe.rakuten.co.jp/category/17/"
+    },
+    {
+      "id": "23",
+      "name": "鍋料理",
+      "url": "https://recipe.rakuten.co.jp/category/23/"
+    },
+    {
+      "id": "18",
+      "name": "サラダ",
+      "url": "https://recipe.rakuten.co.jp/category/18/"
+    },
+    {
+      "id": "22",
+      "name": "パン",
+      "url": "https://recipe.rakuten.co.jp/category/22/"
+    },
+    {
+      "id": "21",
+      "name": "お菓子",
+      "url": "https://recipe.rakuten.co.jp/category/21/"
+    },
+    {
+      "id": "10",
+      "name": "肉",
+      "url": "https://recipe.rakuten.co.jp/category/10/"
+    },
+    {
+      "id": "11",
+      "name": "魚",
+      "url": "https://recipe.rakuten.co.jp/category/11/"
+    },
+    {
+      "id": "12",
+      "name": "野菜",
+      "url": "https://recipe.rakuten.co.jp/category/12/"
+    },
+    {
+      "id": "34",
+      "name": "果物",
+      "url": "https://recipe.rakuten.co.jp/category/34/"
+    },
+    {
+      "id": "19",
+      "name": "ソース・調味料・ドレッシング",
+      "url": "https://recipe.rakuten.co.jp/category/19/"
+    },
+    {
+      "id": "27",
+      "name": "飲みもの",
+      "url": "https://recipe.rakuten.co.jp/category/27/"
+    },
+    {
+      "id": "35",
+      "name": "大豆・豆腐",
+      "url": "https://recipe.rakuten.co.jp/category/35/"
+    },
+    {
+      "id": "13",
+      "name": "その他の食材",
+      "url": "https://recipe.rakuten.co.jp/category/13/"
+    },
+    {
+      "id": "20",
+      "name": "お弁当",
+      "url": "https://recipe.rakuten.co.jp/category/20/"
+    },
+    {
+      "id": "36",
+      "name": "簡単料理・時短",
+      "url": "https://recipe.rakuten.co.jp/category/36/"
+    },
+    {
+      "id": "37",
+      "name": "節約料理",
+      "url": "https://recipe.rakuten.co.jp/category/37/"
+    },
+    {
+      "id": "38",
+      "name": "今日の献立",
+      "url": "https://recipe.rakuten.co.jp/category/38/"
+    },
+    {
+      "id": "39",
+      "name": "健康料理",
+      "url": "https://recipe.rakuten.co.jp/category/39/"
+    },
+    {
+      "id": "40",
+      "name": "調理器具",
+      "url": "https://recipe.rakuten.co.jp/category/40/"
+    },
+    {
+      "id": "26",
+      "name": "その他の目的・シーン",
+      "url": "https://recipe.rakuten.co.jp/category/26/"
+    },
+    {
+      "id": "41",
+      "name": "中華料理",
+      "url": "https://recipe.rakuten.co.jp/category/41/"
+    },
+    {
+      "id": "42",
+      "name": "韓国料理",
+      "url": "https://recipe.rakuten.co.jp/category/42/"
+    },
+    {
+      "id": "43",
+      "name": "イタリア料理",
+      "url": "https://recipe.rakuten.co.jp/category/43/"
+    },
+    {
+      "id": "44",
+      "name": "フランス料理",
+      "url": "https://recipe.rakuten.co.jp/category/44/"
+    },
+    {
+      "id": "25",
+      "name": "西洋料理",
+      "url": "https://recipe.rakuten.co.jp/category/25/"
+    },
+    {
+      "id": "46",
+      "name": "エスニック料理・中南米",
+      "url": "https://recipe.rakuten.co.jp/category/46/"
+    },
+    {
+      "id": "47",
+      "name": "沖縄料理",
+      "url": "https://recipe.rakuten.co.jp/category/47/"
+    },
+    {
+      "id": "48",
+      "name": "日本各地の郷土料理",
+      "url": "https://recipe.rakuten.co.jp/category/48/"
+    },
+    {
+      "id": "24",
+      "name": "行事・イベント",
+      "url": "https://recipe.rakuten.co.jp/category/24/"
+    },
+    {
+      "id": "49",
+      "name": "おせち料理",
+      "url": "https://recipe.rakuten.co.jp/category/49/"
+    },
+    {
+      "id": "50",
+      "name": "クリスマス",
+      "url": "https://recipe.rakuten.co.jp/category/50/"
+    },
+    {
+      "id": "51",
+      "name": "ひな祭り",
+      "url": "https://recipe.rakuten.co.jp/category/51/"
+    },
+    {
+      "id": "52",
+      "name": "春（3月～5月）",
+      "url": "https://recipe.rakuten.co.jp/category/52/"
+    },
+    {
+      "id": "53",
+      "name": "夏（6月～8月）",
+      "url": "https://recipe.rakuten.co.jp/category/53/"
+    },
+    {
+      "id": "54",
+      "name": "秋（9月～11月）",
+      "url": "https://recipe.rakuten.co.jp/category/54/"
+    },
+    {
+      "id": "55",
+      "name": "冬（12月～2月）",
+      "url": "https://recipe.rakuten.co.jp/category/55/"
+    }
+  ]
+}
