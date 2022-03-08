@@ -1,20 +1,7 @@
-import recipeList from "../../mocks/recipeList.json";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
-const CardRecipeListPresentation = ({ title, category }) => {
-  const topRecipeList = []; // ホームに表示される２このレシピを入れておく配列
-  let count = 0;
-  const MAX_ORDER_NUM = 2;
-
-  // recipeListの中から必要なデータをとってくる
-  for (let i = 0; i < recipeList.result.length; i++) {
-    if (recipeList.result[i].category == category && count < MAX_ORDER_NUM) {
-      topRecipeList.push(recipeList.result[i]);
-      count++;
-    }
-  }
+const CardRecipeListPresentation = ({ title, list }) => {
   return (
     <div>
       <div className="flex mx-6 my-4">
@@ -24,7 +11,7 @@ const CardRecipeListPresentation = ({ title, category }) => {
         </Link>
       </div>
       <ul className="grid grid-cols-2 gap-4 mx-5">
-        {topRecipeList.map((recipe, i) => (
+        {list.map((recipe, i) => (
           <li key={i}>
             <Link href={recipe.recipeUrl}>
               <a>

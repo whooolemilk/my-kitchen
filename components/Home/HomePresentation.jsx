@@ -5,7 +5,8 @@ const HomePresentation = () => {
   return (
     <>
       <AppBannerContainer />
-      <CardRecipeListContainer />
+      <CardRecipeListContainer category="dinner" title="簡単ばんごはん" />
+      <CardRecipeListContainer category="lunch" title="おいしいおひるごはん" />
     </>
   );
 };
