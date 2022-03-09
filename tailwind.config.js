@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         ocher: {
+          100: "#F8F6EF",
           300: "#bca28c",
           400: "#a48b78",
         },

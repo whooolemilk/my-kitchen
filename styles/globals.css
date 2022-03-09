@@ -28,3 +28,7 @@ a {
 h1 {
   letter-spacing: 0em;
 }
+
+span {
+  display: inline-block;
+}

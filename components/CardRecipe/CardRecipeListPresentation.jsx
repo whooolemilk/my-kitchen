@@ -1,12 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const CardRecipeListPresentation = ({ title, list }) => {
+const CardRecipeListPresentation = ({ title, list, category, description }) => {
   return (
     <div>
       <div className="flex mx-6 my-4">
         <h1 className="text-xl font-bold">{title}</h1>
-        <Link href="/">
+        <Link
+          href={{
+            pathname: "/lists",
+            query: {
+              title: title,
+              category: category,
+              description: description,
+            },
+          }}
+        >
           <a className="text-ocher-400 ml-auto">もっと見る</a>
         </Link>
       </div>
