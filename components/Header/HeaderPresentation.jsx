@@ -5,23 +5,23 @@ import { useRouter } from "next/router";
 
 const HeaderPresentation = () => {
   const router = useRouter();
-  console.log(router.pathname);
-  const pathList = ["/lists"];
+  const displayBackPathList = ["/lists"];
   return (
     <div>
-      <header className="grid grid-cols-3 items-center border-2 border-solid h-16">
-        {pathList.includes(router.pathname) ? (
-          <button type="button" onClick={() => router.back()}>
+      <header className="relative flex items-center border-2 border-solid h-16 px-3">
+        {displayBackPathList.includes(router.pathname) ? (
+          <button type="button" className="" onClick={() => router.back()}>
             <IconReturn className="" />
           </button>
         ) : (
-          <></>
+          <div></div>
         )}
         <Link href="/" passHref>
-          <a className="block">
+          <a className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <LogoMykitchen />
           </a>
         </Link>
+
         <div className="hidden md:block">
           <nav>
             <ul>
