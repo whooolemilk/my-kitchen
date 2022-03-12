@@ -5,7 +5,7 @@ import IconValidSearch from "../Icons/IconValidSearch";
 import IconInvalidSearch from "../Icons/IconInvalidSearch";
 
 const FooterPresentation = ({ name }) => {
-  const homePathList = ["/", "/lists"];
+  const homePathList = ["/", "/lists", "/recipe"];
   const searchPathList = ["/search"];
   return (
     <footer className="w-full h-auto rounded-t-large border-2 border-solid block inset-x-0 bottom-0 z-10 bg-white shadow sticky">

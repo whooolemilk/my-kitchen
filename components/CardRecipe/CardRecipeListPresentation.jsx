@@ -22,7 +22,14 @@ const CardRecipeListPresentation = ({ title, list, category, description }) => {
       <ul className="grid grid-cols-2 gap-4 mx-5">
         {list.map((recipe, i) => (
           <li key={i}>
-            <Link href={recipe.recipeUrl}>
+            <Link
+              href={{
+                pathname: "/recipe",
+                query: {
+                  recipeTitle: recipe.recipeTitle,
+                },
+              }}
+            >
               <a>
                 <Image
                   src={recipe.foodImageUrl}

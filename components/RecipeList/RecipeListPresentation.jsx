@@ -41,7 +41,14 @@ const RecipeListPresentation = ({ title, list, description }) => {
               {recipe.recipeDescription}
             </p>
             <div className="text-center mb-16">
-              <Link href="/">
+              <Link
+                href={{
+                  pathname: "/recipe",
+                  query: {
+                    recipeTitle: recipe.recipeTitle,
+                  },
+                }}
+              >
                 <a>
                   <button className="bg-ocher-300 px-24 py-4 rounded-full text-white font-bold">
                     レシピの詳細を見る
