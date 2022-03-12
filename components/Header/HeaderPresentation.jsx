@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 
 const HeaderPresentation = () => {
   const router = useRouter();
-  const displayBackPathList = ["/lists", "/recipe"];
+  const displayBackPathList = ["/lists", "/recipe", "/result"];
   return (
     <div>
       <header className="relative flex items-center border-2 border-solid h-16 px-3">

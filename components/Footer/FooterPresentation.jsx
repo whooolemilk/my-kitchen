@@ -6,7 +6,7 @@ import IconInvalidSearch from "../Icons/IconInvalidSearch";
 
 const FooterPresentation = ({ name }) => {
   const homePathList = ["/", "/lists", "/recipe"];
-  const searchPathList = ["/search"];
+  const searchPathList = ["/search", "/result"];
   return (
     <footer className="w-full h-auto rounded-t-large border-2 border-solid block inset-x-0 bottom-0 z-10 bg-white shadow sticky">
       <ul className="mx-20 flex justify-between">
