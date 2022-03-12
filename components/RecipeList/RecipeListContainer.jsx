@@ -1,4 +1,4 @@
-import RecipeListPresentation from "./ResipeListPresentation";
+import RecipeListPresentation from "./RecipeListPresentation";
 import recipeList from "../../mocks/recipeList.json";
 import { useState } from "react";
 import { useRouter } from "next/router";
