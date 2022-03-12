@@ -1,16 +1,27 @@
-import Image from "next/image";
 import Link from "next/link";
+import IconReturn from "../Icons/IconReturn";
 import LogoMykitchen from "../Icons/LogoMykitchen";
-
-import style from "./../../styles/Header.module.css";
+import { useRouter } from "next/router";
 
 const HeaderPresentation = () => {
+  const router = useRouter();
+  const displayBackPathList = ["/lists"];
   return (
     <div>
-      <header className="flex place-content-center border-2 border-solid ">
-        <Link href="/search" passHref>
-          <LogoMykitchen />
+      <header className="relative flex items-center border-2 border-solid h-16 px-3">
+        {displayBackPathList.includes(router.pathname) ? (
+          <button type="button" className="" onClick={() => router.back()}>
+            <IconReturn className="" />
+          </button>
+        ) : (
+          <div></div>
+        )}
+        <Link href="/" passHref>
+          <a className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <LogoMykitchen />
+          </a>
         </Link>
+
         <div className="hidden md:block">
           <nav>
             <ul>

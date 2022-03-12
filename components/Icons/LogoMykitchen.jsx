@@ -2,7 +2,7 @@ const LogoMykitchen = () => {
   return (
     <svg
       viewBox="0 0 410.07 59.32"
-      className="h-6 w-auto my-5 fill-ocher-400 hover:fill-ocher-300"
+      className="h-6 w-auto fill-ocher-400 hover:fill-ocher-300"
       alt="MYKITCHEN"
     >
       <defs>

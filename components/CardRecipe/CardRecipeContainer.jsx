@@ -2,7 +2,7 @@ import CardRecipeListPresentation from "./CardRecipeListPresentation";
 import recipeList from "../../mocks/recipeList.json";
 import { useState } from "react";
 
-const CardRecipeListContainer = ({ category, title }) => {
+const CardRecipeListContainer = ({ title, category, description }) => {
   const MAX_ORDER_NUM = 2;
 
   const list = recipeList.result
@@ -11,9 +11,14 @@ const CardRecipeListContainer = ({ category, title }) => {
 
   const [topRecipeList, setTopRecipeList] = useState(list); // ホームに表示される２このレシピを入れておく配列
   return (
-    <div>
-      <CardRecipeListPresentation title={title} list={topRecipeList} />
-    </div>
+    <>
+      <CardRecipeListPresentation
+        title={title}
+        list={topRecipeList}
+        category={category}
+        description={description}
+      />
+    </>
   );
 };
 
