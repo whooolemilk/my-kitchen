@@ -1,10 +1,6 @@
 import SearchFormContainer from "../SearchForm/SearchFormContainer";
 const SearchPresentation = () => {
-  return (
-    <>
-      <SearchFormContainer />
-    </>
-  );
+  return <SearchFormContainer />;
 };
 
 export default SearchPresentation;
