@@ -4,16 +4,17 @@ import MenuPresentation from "./MenuPresentation";
 
 const MenuContainer = () => {
   const [list, setList] = useState([]);
+  let keyList = [];
 
   useEffect(() => {
     const length = localStorage.length;
     for (let i = 0; i < length; i++) {
-      setList([...list, localStorage.key(i)]); //なぜか同じ値がlength文配列に入ってしまう…
-      console.log(localStorage.key(i));
+      if (!isNaN(localStorage.key(i))) {
+        keyList.push(localStorage.key(i));
+      }
+      setList(keyList);
     }
   }, []);
-
-  console.log(list);
   return <MenuPresentation />;
 };
 
