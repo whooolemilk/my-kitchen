@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         ocher: {
           100: "#F8F6EF",
+          200: "#DFC6B8",
           300: "#bca28c",
           400: "#a48b78",
         },
