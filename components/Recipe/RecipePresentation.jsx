@@ -3,8 +3,8 @@ import IconClockSmall from "../Icons/IconClockSmall";
 import IconYenSmall from "../Icons/IconYenSmall";
 import IconExternalLink from "../Icons/IconExternalLink";
 import Link from "next/link";
+import AddRecipeButtonContainer from "../AddRecipeButton/AddRecipeButtonContainer";
 const RecipePresentation = ({ list }) => {
-  console.log(list);
   return (
     <>
       {list.map((recipe) => (
@@ -52,6 +52,7 @@ const RecipePresentation = ({ list }) => {
               </a>
             </Link>
           </div>
+          <AddRecipeButtonContainer list={list} />
         </>
       ))}
     </>
