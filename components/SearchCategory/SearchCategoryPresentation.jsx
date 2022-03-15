@@ -1,9 +1,10 @@
 import CardCategoryContainer from "../CardCategory/CardCategoryContainer";
 
-const SearchCategoryPresentation = ({ active }) => {
+const SearchCategoryPresentation = ({ activeIndex }) => {
+  console.log(activeIndex);
   return (
     <>
-      {active ? (
+      {activeIndex === 0 && (
         <div className="text-center divide-y divide-ocher-200">
           <div className="grid grid-cols-3 divide-x divide-ocher-200">
             <CardCategoryContainer categoryName="肉" name="肉" />
@@ -19,7 +20,8 @@ const SearchCategoryPresentation = ({ active }) => {
             <CardCategoryContainer categoryName="飲みもの" name="飲みもの" />
           </div>
         </div>
-      ) : (
+      )}
+      {activeIndex === 1 && (
         <div className="text-center divide-y divide-ocher-200">
           <div className="grid grid-cols-4 divide-x divide-ocher-200">
             <CardCategoryContainer categoryName="ご飯もの" name="時短料理" />

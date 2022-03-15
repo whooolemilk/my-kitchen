@@ -1,6 +1,6 @@
 import SearchCategoryPresentation from "./SearchCategoryPresentation";
-const SearchCategoryContainer = ({ active }) => {
-  return <SearchCategoryPresentation active={active} />;
+const SearchCategoryContainer = ({ activeIndex }) => {
+  return <SearchCategoryPresentation activeIndex={activeIndex} />;
 };
 
 export default SearchCategoryContainer;
