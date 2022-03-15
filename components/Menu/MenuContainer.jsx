@@ -12,9 +12,10 @@ const MenuContainer = () => {
       if (!isNaN(localStorage.key(i))) {
         keyList.push(localStorage.key(i));
       }
-      setList(keyList);
     }
+    setList(keyList);
   }, []);
+  console.log(list);
   return <MenuPresentation />;
 };
 

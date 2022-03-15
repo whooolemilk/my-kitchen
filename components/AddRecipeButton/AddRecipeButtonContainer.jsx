@@ -6,14 +6,14 @@ const AddRecipeButtonContainer = ({ list }) => {
   const recipeId = recipe.recipeId;
   const menuData = recipe.recipeMaterial;
 
-  const [flag, setFlag] = useState(false);
+  const [wasRegistered, setWasRegistered] = useState(false);
   const submit = () => {
-    if (!flag) {
-      localStorage.setItem(recipeId, JSON.stringify(menuData));
-      setFlag(true);
-    } else {
-      setFlag(false);
+    if (wasRegistered) {
+      setWasRegistered(false);
       localStorage.removeItem(recipeId);
+    } else {
+      localStorage.setItem(recipeId, JSON.stringify(menuData));
+      setWasRegistered(true);
     }
   };
 
@@ -22,7 +22,10 @@ const AddRecipeButtonContainer = ({ list }) => {
   };
 
   return (
-    <AddRecipeButtonPresentation flag={flag} onClick={() => handleClick()} />
+    <AddRecipeButtonPresentation
+      wasRegistered={wasRegistered}
+      onClick={() => handleClick()}
+    />
   );
 };
 
