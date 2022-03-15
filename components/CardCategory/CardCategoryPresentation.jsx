@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 const CardCategoryPresentation = ({ categoryList, name }) => {
-  console.log(categoryList);
   return (
     <Link
       href={{
