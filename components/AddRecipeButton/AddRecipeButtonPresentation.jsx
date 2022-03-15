@@ -1,29 +1,13 @@
-import { useState } from "react";
 import IconInvalidSpoonFork from "../Icons/IconInvalidSpoonFork";
-import IconValidSpoonFork from "../Icons/IconValidSpoonFork copy";
+import IconValidSpoonFork from "../Icons/IconValidSpoonFork";
 
-const AddRecipeButtonPresentation = ({ recipeId, menuData }) => {
-  const [flag, setFlag] = useState(false);
-  const submit = () => {
-    if (!flag) {
-      localStorage.setItem(recipeId, JSON.stringify(menuData));
-      setFlag(true);
-    } else {
-      setFlag(false);
-      localStorage.removeItem(recipeId);
-    }
-  };
-
-  const handleClick = () => {
-    submit();
-  };
+const AddRecipeButtonPresentation = ({ flag, onClick }) => {
   return (
     <>
       {!flag ? (
         <button
           name="query"
-          // onClick={() => onClick}
-          onClick={submit}
+          onClick={() => onClick}
           className="fixed bottom-24 right-4 w-20 h-20 text-center rounded-full border-gray-400 border-2 bg-white"
         >
           <IconInvalidSpoonFork />
@@ -32,8 +16,7 @@ const AddRecipeButtonPresentation = ({ recipeId, menuData }) => {
       ) : (
         <button
           name="query"
-          // onClick={() => onClick}
-          onClick={submit}
+          onClick={() => onClick}
           className="fixed bottom-24 right-4 w-20 h-20 text-center rounded-full border-orange-400 border-2 bg-white"
         >
           <IconValidSpoonFork />
