@@ -15,7 +15,6 @@ const MenuContainer = () => {
     }
     setList(keyList);
   }, []);
-  console.log(list);
   return <MenuPresentation />;
 };
 
