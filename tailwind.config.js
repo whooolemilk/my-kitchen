@@ -18,9 +18,9 @@ module.exports = {
         large: "2.5rem",
       },
     },
-    fill: (theme) => ({
-      ocher: theme("colors.ocher"),
-    }),
+    // fill: (theme) => ({
+    //   ocher: theme("colors.ocher"),
+    // }),
   },
   plugins: [require("@tailwindcss/line-clamp")],
 };
