@@ -22,14 +22,16 @@ const ResultRecipeListPresentation = ({ list, keyword }) => {
             >
               <a>
                 <div className="flex space-x-3 mx-4 py-3">
-                  <Image
-                    src={recipe.food_image_url}
-                    width={150}
-                    height={150}
-                    objectFit="cover"
-                    alt="Food Image"
-                    className="rounded-2xl responsive w-16 h-16"
-                  ></Image>
+                  <div className="rounded-2xl flex-none w-36">
+                    <Image
+                      src={recipe.food_image_url}
+                      width={300}
+                      height={300}
+                      objectFit="cover"
+                      alt="Food Image"
+                      className="rounded-2xl responsive"
+                    ></Image>
+                  </div>
                   <div className="h-auto">
                     <p className="font-semibold flex-grow line-clamp-2">
                       {recipe.title}
