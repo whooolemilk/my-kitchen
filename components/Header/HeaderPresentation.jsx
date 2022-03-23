@@ -8,7 +8,7 @@ const HeaderPresentation = () => {
   const displayBackPathList = ["/lists", "/recipe", "/result"];
   return (
     <div>
-      <header className="relative flex items-center border-2 border-solid h-16 px-3">
+      <header className="relative flex items-center border-2 border-solid h-14">
         {displayBackPathList.includes(router.pathname) ? (
           <button type="button" className="" onClick={() => router.back()}>
             <IconReturn className="" />
