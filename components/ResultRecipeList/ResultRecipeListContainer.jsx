@@ -13,7 +13,6 @@ const ResultRecipeListContainer = () => {
       );
       const json = await data.json();
       setList(json);
-      console.log(json);
     };
     fetchData().catch(console.error);
   }, [router.query.keyword]);

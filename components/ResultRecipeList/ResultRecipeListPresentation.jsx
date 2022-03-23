@@ -28,13 +28,13 @@ const ResultRecipeListPresentation = ({ list, keyword }) => {
                     height={150}
                     objectFit="cover"
                     alt="Food Image"
-                    className="rounded-2xl responsive"
+                    className="rounded-2xl responsive w-16 h-16"
                   ></Image>
                   <div className="h-auto">
-                    <p className="font-semibold w-48 line-clamp-2">
+                    <p className="font-semibold flex-grow line-clamp-2">
                       {recipe.title}
                     </p>
-                    <p className="text-sm w-48 line-clamp-2">
+                    <p className="text-sm flex-grow line-clamp-2">
                       {recipe.description}
                     </p>
                     <div className="grid grid-cols-2 divide-x gap-2 text-center mt-2 divide-gray-300">
