@@ -1,16 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const CardRecipeListPresentation = ({ title, list, description }) => {
+const CardRecipeListPresentation = ({
+  categoryId,
+  title,
+  list,
+  description,
+}) => {
   return (
-    <div>
+    <>
       <div className="flex mx-4 mb-2 mt-5">
         <h1 className="text-lg font-bold flex-grow">{title}</h1>
         <Link
           href={{
             pathname: "/lists",
             query: {
-              title: title,
+              categoryId: categoryId,
               description: description,
             },
           }}
@@ -46,7 +51,7 @@ const CardRecipeListPresentation = ({ title, list, description }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 };
 
