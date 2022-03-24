@@ -31,6 +31,7 @@ const CardRecipeListContainer = ({ id, description }) => {
     fetchData().catch(console.error);
 
     // トップに表示するレシピを抽出
+    // きっとここが変！！！！！
     const recipeList = list.slice(0, MAX_ORDER_NUM);
     console.log(recipeList);
     setTopRecipeList(recipeList);
