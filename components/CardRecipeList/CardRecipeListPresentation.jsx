@@ -4,7 +4,7 @@ import Link from "next/link";
 const CardRecipeListPresentation = ({ title, list, description }) => {
   return (
     <div>
-      <div className="flex mx-5 mb-2 mt-5">
+      <div className="flex mx-4 mb-2 mt-5">
         <h1 className="text-lg font-bold flex-grow">{title}</h1>
         <Link
           href={{
@@ -18,7 +18,7 @@ const CardRecipeListPresentation = ({ title, list, description }) => {
           <a className="text-ocher-400 text-sm my-1">もっと見る</a>
         </Link>
       </div>
-      <ul className="grid grid-cols-2 gap-4 mx-4">
+      <ul className="grid grid-cols-2 gap-3 mx-4">
         {list.map((recipe, i) => (
           <li key={i}>
             <Link
