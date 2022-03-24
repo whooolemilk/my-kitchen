@@ -1,38 +1,37 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const CardRecipeListPresentation = ({ title, list, category, description }) => {
+const CardRecipeListPresentation = ({ title, list, description }) => {
   return (
     <div>
-      <div className="flex mx-6 my-4">
-        <h1 className="text-xl font-bold">{title}</h1>
+      <div className="flex mx-4 mb-2 mt-5">
+        <h1 className="text-lg font-bold flex-grow">{title}</h1>
         <Link
           href={{
             pathname: "/lists",
             query: {
               title: title,
-              category: category,
               description: description,
             },
           }}
         >
-          <a className="text-ocher-400 ml-auto">もっと見る</a>
+          <a className="text-ocher-400 text-sm my-1">もっと見る</a>
         </Link>
       </div>
-      <ul className="grid grid-cols-2 gap-4 mx-5">
+      <ul className="grid grid-cols-2 gap-3 mx-4">
         {list.map((recipe, i) => (
           <li key={i}>
             <Link
               href={{
                 pathname: "/recipe",
                 query: {
-                  recipeTitle: recipe.recipeTitle,
+                  recipeTitle: recipe.title,
                 },
               }}
             >
               <a>
                 <Image
-                  src={recipe.foodImageUrl}
+                  src={recipe.food_image_url}
                   width={200}
                   height={200}
                   objectFit="cover"
@@ -40,7 +39,7 @@ const CardRecipeListPresentation = ({ title, list, category, description }) => {
                   className="rounded-2xl"
                 ></Image>
                 <p className="font-semibold text-sm line-clamp-2">
-                  {recipe.recipeTitle}
+                  {recipe.title}
                 </p>
               </a>
             </Link>
