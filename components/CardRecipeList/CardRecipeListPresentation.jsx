@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const CardRecipeListPresentation = ({ title, list, category, description }) => {
+const CardRecipeListPresentation = ({ title, list, description }) => {
+  console.log(list);
   return (
     <div>
       <div className="flex mx-6 my-4">
@@ -11,7 +12,6 @@ const CardRecipeListPresentation = ({ title, list, category, description }) => {
             pathname: "/lists",
             query: {
               title: title,
-              category: category,
               description: description,
             },
           }}
@@ -26,13 +26,13 @@ const CardRecipeListPresentation = ({ title, list, category, description }) => {
               href={{
                 pathname: "/recipe",
                 query: {
-                  recipeTitle: recipe.recipeTitle,
+                  recipeTitle: recipe.title,
                 },
               }}
             >
               <a>
                 <Image
-                  src={recipe.foodImageUrl}
+                  src={recipe.food_image_url}
                   width={200}
                   height={200}
                   objectFit="cover"
@@ -40,7 +40,7 @@ const CardRecipeListPresentation = ({ title, list, category, description }) => {
                   className="rounded-2xl"
                 ></Image>
                 <p className="font-semibold text-sm line-clamp-2">
-                  {recipe.recipeTitle}
+                  {recipe.title}
                 </p>
               </a>
             </Link>

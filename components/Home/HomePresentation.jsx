@@ -1,20 +1,16 @@
 import AppBannerContainer from "../AppBanner/AppBannerContainer";
-import CardRecipeListContainer from "../CardRecipe/CardRecipeContainer";
+import CardRecipeListContainer from "../CardRecipeList/CardRecipeListContainer";
 
 const HomePresentation = () => {
   return (
     <>
       <AppBannerContainer />
-      <CardRecipeListContainer
-        category="dinner"
-        title="簡単ばんごはん"
-        description="おいしいばんごはんだよ"
-      />
-      <CardRecipeListContainer
-        category="lunch"
-        title="おいしいおひるごはん"
-        description="３分以内にできるよ"
-      />
+      <CardRecipeListContainer id={56} />
+      {/* <CardRecipeListContainer id={57} /> */}
+      {/* <CardRecipeListContainer id={58} />
+      <CardRecipeListContainer id={59} />
+      <CardRecipeListContainer id={60} />
+      <CardRecipeListContainer id={61} /> */}
     </>
   );
 };
