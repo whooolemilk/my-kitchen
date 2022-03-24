@@ -15,7 +15,7 @@ module.exports = {
         },
       },
       borderRadius: {
-        large: "2.5rem",
+        large: "2rem",
       },
     },
     // fill: (theme) => ({

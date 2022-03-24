@@ -15,12 +15,12 @@ const FooterPresentation = ({ name }) => {
             {homePathList.includes(name) ? (
               <a className="w-full selection:justify-center inline-block text-center pt-2 pb-1">
                 <IconValidHome />
-                <span className="text-ocher-400">ホーム</span>
+                <span className="text-ocher-400 text-xs">ホーム</span>
               </a>
             ) : (
               <a className="w-full selection:justify-center inline-block text-center pt-2 pb-1">
                 <IconInvalidHome />
-                <span className="text-gray-400">ホーム</span>
+                <span className="text-gray-400 text-xs">ホーム</span>
               </a>
             )}
           </Link>
@@ -28,14 +28,14 @@ const FooterPresentation = ({ name }) => {
         <li>
           <Link href="/search" passHref>
             {searchPathList.includes(name) ? (
-              <a className="w-full text-ocher-400 selection:justify-center inline-block text-center pt-2 pb-1">
+              <a className="w-full selection:justify-center inline-block text-center pt-2 pb-1">
                 <IconValidSearch />
-                <span className="block text-ocher-400">さがす</span>
+                <span className="text-ocher-400 text-xs">さがす</span>
               </a>
             ) : (
               <a className="w-full selection:justify-center inline-block text-center pt-2 pb-1">
                 <IconInvalidSearch />
-                <span className="block text-gray-400">さがす</span>
+                <span className="text-gray-400 text-xs">さがす</span>
               </a>
             )}
           </Link>

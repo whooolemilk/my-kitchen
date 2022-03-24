@@ -2,7 +2,7 @@ const IconValidHome = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-12 w-auto stroke-ocher-400 focus:stroke-ocher-400"
+      className="h-8 w-auto stroke-ocher-400 focus:stroke-ocher-400"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
