@@ -2,11 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const CardRecipeListPresentation = ({ title, list, description }) => {
-  console.log(list);
   return (
     <div>
-      <div className="flex mx-6 my-4">
-        <h1 className="text-xl font-bold">{title}</h1>
+      <div className="flex mx-5 mb-2 mt-5">
+        <h1 className="text-lg font-bold flex-grow">{title}</h1>
         <Link
           href={{
             pathname: "/lists",
@@ -16,10 +15,10 @@ const CardRecipeListPresentation = ({ title, list, description }) => {
             },
           }}
         >
-          <a className="text-ocher-400 ml-auto">もっと見る</a>
+          <a className="text-ocher-400 text-sm my-1">もっと見る</a>
         </Link>
       </div>
-      <ul className="grid grid-cols-2 gap-4 mx-5">
+      <ul className="grid grid-cols-2 gap-4 mx-4">
         {list.map((recipe, i) => (
           <li key={i}>
             <Link
