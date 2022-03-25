@@ -22,7 +22,7 @@ const RecipeContainer = () => {
 
     fetchData().catch(console.error);
   }, [router.query.recipeId]);
-  return <RecipePresentation list={list} />;
+  return <RecipePresentation recipe={list} />;
 };
 
 export default RecipeContainer;
