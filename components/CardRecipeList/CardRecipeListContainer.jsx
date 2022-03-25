@@ -1,5 +1,4 @@
 import CardRecipeListPresentation from "./CardRecipeListPresentation";
-import recipeList from "../../mocks/recipeList.json";
 import { useState, useEffect } from "react";
 
 const CardRecipeListContainer = ({ id, description }) => {
@@ -34,6 +33,7 @@ const CardRecipeListContainer = ({ id, description }) => {
   return (
     <>
       <CardRecipeListPresentation
+        categoryId={id}
         title={title}
         list={list}
         description={description}
@@ -42,23 +42,4 @@ const CardRecipeListContainer = ({ id, description }) => {
   );
 };
 
-// const CardRecipeListContainer = ({ title, category, description }) => {
-//   const MAX_ORDER_NUM = 2;
-
-//   const list = recipeList.result
-//     .filter((recipe) => recipe.category === category)
-//     .slice(0, MAX_ORDER_NUM);
-
-//   const [topRecipeList, setTopRecipeList] = useState(list); // ホームに表示される２このレシピを入れておく配列
-//   return (
-//     <>
-//       <CardRecipeListPresentation
-//         title={title}
-//         list={topRecipeList}
-//         category={category}
-//         description={description}
-//       />
-//     </>
-//   );
-// };
 export default CardRecipeListContainer;
