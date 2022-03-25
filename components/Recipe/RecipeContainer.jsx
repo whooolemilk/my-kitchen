@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const RecipeContainer = () => {
   // recipeId
   const router = useRouter();
-  const [list, setList] = useState([]);
+  const [recipe, setRecipe] = useState();
   useEffect(() => {
     const fetchData = async () => {
       // レシピデータをとってくる
@@ -16,13 +16,13 @@ const RecipeContainer = () => {
           router.query.recipeId
       );
       const json = await data.json();
-      setList(json);
-      console.log(json);
+      setRecipe(json);
     };
 
     fetchData().catch(console.error);
   }, [router.query.recipeId]);
-  return <RecipePresentation recipe={list} />;
+  console.log(recipe);
+  return <RecipePresentation recipe={recipe} />;
 };
 
 export default RecipeContainer;

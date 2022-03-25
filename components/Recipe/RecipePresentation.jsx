@@ -5,19 +5,20 @@ import IconExternalLink from "../Icons/IconExternalLink";
 import Link from "next/link";
 import AddRecipeButtonContainer from "../AddRecipeButton/AddRecipeButtonContainer";
 const RecipePresentation = ({ recipe }) => {
-  if (!recipe.length) {
+  console.log(recipe);
+  if (recipe === undefined) {
     return <div>No Items</div>;
   }
   return (
     <>
-      {/* <Image
+      <Image
         src={recipe.food_image_url}
         width={800}
         height={500}
         layout={"responsive"}
         objectFit="cover"
         alt="Food Image"
-      ></Image> */}
+      ></Image>
       <div className="mx-4">
         <h1 className="font-bold text-xl text-ocher-400  my-3">
           {recipe.title}
@@ -36,27 +37,23 @@ const RecipePresentation = ({ recipe }) => {
       </div>
       <h2 className="font-bold text-xl mt-4 mb-3 mx-4">材料</h2>
       <ul>
-        {/* {recipe.materials.map((material, i) => (
+        {recipe.materials.map((material, i) => (
           <li key={i} className="px-8 py-3 bg-white odd:bg-ocher-100">
             {material}
           </li>
-        ))} */}
+        ))}
       </ul>
       <div className="text-center my-6">
-        {/* <Link href={recipe.url}>
+        <Link href={recipe.url}>
           <a>
             <button className="mx-auto bg-orange-500 flex gap-2 py-4 px-20 rounded-full text-white font-bold">
               楽天レシピでもっと見る
               <IconExternalLink />
             </button>
           </a>
-        </Link> */}
+        </Link>
       </div>
-
-      {/* {recipe.map((recipe) => (
-        <>
-        </>
-      ))} */}
+      {/* <AddRecipeButtonContainer /> */}
     </>
   );
 };
