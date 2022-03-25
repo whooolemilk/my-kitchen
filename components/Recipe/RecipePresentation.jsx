@@ -52,7 +52,7 @@ const RecipePresentation = ({ recipe }) => {
           </a>
         </Link>
       </div>
-      {/* <AddRecipeButtonContainer /> */}
+      <AddRecipeButtonContainer recipe={recipe} />
     </>
   );
 };
