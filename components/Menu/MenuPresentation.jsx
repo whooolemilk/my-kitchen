@@ -1,36 +1,18 @@
 import Image from "next/dist/client/image";
 import Link from "next/dist/client/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import IconClock from "../Icons/IconClock";
+import IconDown from "../Icons/IconDown";
+import IconUp from "../Icons/IconUp";
 import IconYen from "../Icons/IconYen";
 
-const MenuPresentation = ({ keysList, materialsList }) => {
-  //console.log(keysList);
+const MenuPresentation = ({ recipeList }) => {
   const [isVisible, setIsVisible] = useState(false);
-  const [recipeList, setRecipeList] = useState([]);
-  let idList = [];
 
   const handleClick = () => {
     setIsVisible(!isVisible);
   };
 
-  useEffect(() => {
-    const fetchData = async () => {
-      // レシピデータをとってくる
-      // keyListはレシピのidが複数入ってるリスト
-      for (let i = 0; i < keysList.length; i++) {
-        const data = await fetch(
-          "https://forked-mykitchen-backend.herokuapp.com/recipes/" +
-            keysList[i]
-        );
-        const json = await data.json();
-        idList.push(json);
-      }
-      setRecipeList(idList);
-    };
-    fetchData().catch(console.error);
-  }, [keysList.length]);
-  console.log(recipeList);
   return (
     <>
       <h1 className="text-xl mx-4">つくる</h1>
@@ -82,39 +64,7 @@ const MenuPresentation = ({ keysList, materialsList }) => {
               <div className="flex border-y px-4 ">
                 <li className="py-3 flex-grow">材料を確認</li>
                 <button onClick={() => handleClick(isVisible)}>
-                  <li>
-                    {isVisible ? (
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M5 15l7-7 7 7"
-                        />
-                      </svg>
-                    ) : (
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 my-3"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M19 9l-7 7-7-7"
-                        />
-                      </svg>
-                    )}
-                  </li>
+                  <li>{isVisible ? <IconUp /> : <IconDown />}</li>
                 </button>
               </div>
               {isVisible ? (
