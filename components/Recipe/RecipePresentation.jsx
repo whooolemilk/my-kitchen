@@ -5,7 +5,6 @@ import IconExternalLink from "../Icons/IconExternalLink";
 import Link from "next/link";
 import AddRecipeButtonContainer from "../AddRecipeButton/AddRecipeButtonContainer";
 const RecipePresentation = ({ recipe }) => {
-  console.log(recipe);
   if (recipe === undefined) {
     return <div>No Items</div>;
   }

@@ -1,5 +1,4 @@
 import RecipePresentation from "./RecipePresentation";
-import recipeList from "../../mocks/recipeList.json";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -21,7 +20,6 @@ const RecipeContainer = () => {
 
     fetchData().catch(console.error);
   }, [router.query.recipeId]);
-  console.log(recipe);
   return <RecipePresentation recipe={recipe} />;
 };
 
