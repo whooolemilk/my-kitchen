@@ -47,7 +47,7 @@ const RecipeListPresentation = ({ title, list, description }) => {
                 href={{
                   pathname: "/recipe",
                   query: {
-                    recipeTitle: recipe.title,
+                    recipeId: recipe.id,
                   },
                 }}
               >
