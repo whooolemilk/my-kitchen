@@ -7,36 +7,30 @@ const SearchCategoryPresentation = ({ activeIndex }) => {
       {activeIndex === 0 && (
         <div className="text-center divide-y divide-ocher-200">
           <div className="grid grid-cols-3 divide-x divide-ocher-200">
-            <CardCategoryContainer categoryName="肉" name="肉" />
-            <CardCategoryContainer categoryName="魚" name="魚" />
-            <CardCategoryContainer
-              categoryName="大豆・豆腐"
-              name="大豆・豆腐"
-            />
+            <CardCategoryContainer name="肉" categoryId={10} />
+            <CardCategoryContainer name="魚" categoryId={11} />
+            <CardCategoryContainer name="大豆・豆腐" categoryId={35} />
           </div>
           <div className="grid grid-cols-3 divide-x divide-ocher-200">
-            <CardCategoryContainer categoryName="野菜" name="野菜" />
-            <CardCategoryContainer categoryName="果物" name="果物" />
-            <CardCategoryContainer categoryName="飲みもの" name="飲みもの" />
+            <CardCategoryContainer name="野菜" categoryId={12} />
+            <CardCategoryContainer name="果物" categoryId={34} />
+            <CardCategoryContainer name="飲みもの" categoryId={27} />
           </div>
         </div>
       )}
       {activeIndex === 1 && (
         <div className="text-center divide-y divide-ocher-200">
           <div className="grid grid-cols-4 divide-x divide-ocher-200">
-            <CardCategoryContainer categoryName="ご飯もの" name="時短料理" />
-            <CardCategoryContainer categoryName="節約料理" name="節約料理" />
-            <CardCategoryContainer categoryName="麺・粉物料理" name="麺類" />
-            <CardCategoryContainer
-              categoryName="汁物・スープ"
-              name="汁物・スープ"
-            />
+            <CardCategoryContainer name="時短料理" categoryId={36} />
+            <CardCategoryContainer name="節約料理" categoryId={37} />
+            <CardCategoryContainer name="麺類" categoryId={16} />
+            <CardCategoryContainer name="汁物・スープ" categoryId={17} />
           </div>
           <div className="grid grid-cols-4 divide-x divide-ocher-200">
-            <CardCategoryContainer categoryName="定番の肉料理" name="肉料理" />
-            <CardCategoryContainer categoryName="定番の魚料理" name="魚料理" />
-            <CardCategoryContainer categoryName="パン" name="パン" />
-            <CardCategoryContainer categoryName="お菓子" name="お菓子" />
+            <CardCategoryContainer name="肉料理" categoryId={31} />
+            <CardCategoryContainer name="魚料理" categoryId={32} />
+            <CardCategoryContainer name="パン" categoryId={22} />
+            <CardCategoryContainer name="お菓子" categoryId={21} />
           </div>
         </div>
       )}

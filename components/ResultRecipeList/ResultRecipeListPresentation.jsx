@@ -3,12 +3,19 @@ import Link from "next/dist/client/link";
 import IconClock from "../Icons/IconClock";
 import IconYen from "../Icons/IconYen";
 
-const ResultRecipeListPresentation = ({ list, keyword }) => {
+const ResultRecipeListPresentation = ({ list, keyword, category }) => {
   return (
     <>
-      <h1 className="text-xl mx-4">
-        <span className="font-bold">{keyword}</span>の検索結果
-      </h1>
+      {keyword ? (
+        <h1 className="text-xl mx-4">
+          <span className="font-bold">{keyword}</span>の検索結果
+        </h1>
+      ) : (
+        <h1 className="text-xl mx-4">
+          <span className="font-bold">{category}</span>の関連レシピ
+        </h1>
+      )}
+
       <ul className="divide-y divide-gray-300">
         {list.map((recipe, i) => (
           <li key={i} className=" ">
