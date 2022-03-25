@@ -5,15 +5,14 @@ import IconClock from "../Icons/IconClock";
 import IconYen from "../Icons/IconYen";
 
 const MenuPresentation = ({ keysList, materialsList }) => {
-  console.log(keysList);
+  //console.log(keysList);
   useEffect(() => {
     const fetchData = async () => {
       // レシピデータをとってくる
       // keyListはレシピのidが複数入ってるリスト
       for (let i = 0; i < keysList.length; i++) {
         const data = await fetch(
-          "https://forked-mykitchen-backend.herokuapp.com/recipes?category=" +
-            keyList[i]
+          "https://forked-mykitchen-backend.herokuapp.com/recipes/" + keyList[i]
         );
         const json = await data.json();
         console.log(data); // response

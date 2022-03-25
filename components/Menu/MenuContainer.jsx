@@ -48,7 +48,7 @@ const MenuContainer = () => {
     // fetchData().catch(console.error);
   }, []);
 
-  console.log(keysList);
+  //console.log(keysList);
   // console.log(materialsList);
 
   return <MenuPresentation keysList={keysList} materialsList={materialsList} />;
