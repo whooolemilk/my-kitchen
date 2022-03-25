@@ -30,7 +30,7 @@ const CardRecipeListPresentation = ({
               href={{
                 pathname: "/recipe",
                 query: {
-                  recipeTitle: recipe.title,
+                  recipeId: recipe.id,
                 },
               }}
             >
