@@ -8,6 +8,7 @@ const ResultRecipeListContainer = () => {
   const [category, setCategory] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
+<<<<<<< Updated upstream
       if (router.query.keyword) {
         const data = await fetch(
           "https://forked-mykitchen-backend.herokuapp.com/recipes?keyword=" +
@@ -37,6 +38,15 @@ const ResultRecipeListContainer = () => {
 
         setCategory(filteredCategory[0].name);
       }
+=======
+      const data = await fetch(
+        process.env.NEXT_PUBLIC_API_URL +
+          "/recipes?keyword=" +
+          router.query.keyword
+      );
+      const json = await data.json();
+      setList(json);
+>>>>>>> Stashed changes
     };
     fetchData().catch(console.error);
   }, [router.query.keyword]);

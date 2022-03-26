@@ -11,8 +11,7 @@ const RecipeContainer = () => {
     const fetchData = async () => {
       // レシピデータをとってくる
       const data = await fetch(
-        "https://forked-mykitchen-backend.herokuapp.com/recipes/" +
-          router.query.recipeId
+        process.env.NEXT_PUBLIC_API_URL + "/recipes/" + router.query.recipeId
       );
       const json = await data.json();
       setRecipe(json);

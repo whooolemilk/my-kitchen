@@ -13,7 +13,8 @@ const RecipeListContainer = () => {
     const fetchData = async () => {
       // レシピデータをとってくる
       const data = await fetch(
-        "https://forked-mykitchen-backend.herokuapp.com/recipes?category=" +
+        process.env.NEXT_PUBLIC_API_URL +
+          "/recipes?category=" +
           router.query.categoryId
       );
       const json = await data.json();
@@ -21,7 +22,7 @@ const RecipeListContainer = () => {
 
       // カテゴリ―情報をとってくる
       const categories = await fetch(
-        "https://forked-mykitchen-backend.herokuapp.com/categories"
+        process.env.NEXT_PUBLIC_API_URL + "/categories"
       );
       const categoriesJson = await categories.json();
       const filteredCategory = categoriesJson.filter(
