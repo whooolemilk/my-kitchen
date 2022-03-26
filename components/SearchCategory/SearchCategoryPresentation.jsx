@@ -1,7 +1,6 @@
 import CardCategoryContainer from "../CardCategory/CardCategoryContainer";
 
 const SearchCategoryPresentation = ({ activeIndex }) => {
-  console.log(activeIndex);
   return (
     <>
       {activeIndex === 0 && (
