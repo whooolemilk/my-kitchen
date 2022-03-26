@@ -28,7 +28,6 @@ const MenuContainer = () => {
 
     fetchData().catch(console.error);
   }, [keyList.length]);
-  console.log(recipeList);
   return <MenuPresentation recipeList={recipeList} />;
 };
 

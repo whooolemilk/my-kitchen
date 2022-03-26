@@ -33,7 +33,7 @@ const RecipeListContainer = () => {
 
     fetchData().catch(console.error);
   }, [router.query.categoryId]);
-  console.log(title);
+
   return (
     <RecipeListPresentation
       title={title}
