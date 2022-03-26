@@ -10,7 +10,7 @@ const CardRecipeListContainer = ({ id, description }) => {
     const fetchData = async () => {
       // レシピデータをとってくる
       const data = await fetch(
-        "https://forked-mykitchen-backend.herokuapp.com/recipes?category=" + id
+        process.env.NEXT_PUBLIC_API_URL + "/recipes?category=" + id
       );
       const json = await data.json();
       const recipeList = json.slice(0, MAX_ORDER_NUM);
@@ -18,7 +18,7 @@ const CardRecipeListContainer = ({ id, description }) => {
 
       // カテゴリ―情報をとってくる
       const categories = await fetch(
-        "https://forked-mykitchen-backend.herokuapp.com/categories"
+        process.env.NEXT_PUBLIC_API_URL + "/categories"
       );
       const categoriesJson = await categories.json();
       const filteredCategory = categoriesJson.filter(

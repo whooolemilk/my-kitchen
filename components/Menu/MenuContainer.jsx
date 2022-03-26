@@ -18,7 +18,7 @@ const MenuContainer = () => {
     const fetchData = async () => {
       for (let i = 0; i < keyList.length; i++) {
         const data = await fetch(
-          "https://forked-mykitchen-backend.herokuapp.com/recipes/" + keyList[i]
+          process.env.NEXT_PUBLIC_API_URL + "/recipes/" + keyList[i]
         );
         const json = await data.json();
         idList.push(json);
