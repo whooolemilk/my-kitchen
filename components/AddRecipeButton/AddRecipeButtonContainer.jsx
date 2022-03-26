@@ -1,10 +1,9 @@
 import AddRecipeButtonPresentation from "./AddRecipeButtonPresentation";
 import { useState } from "react";
 
-const AddRecipeButtonContainer = ({ list }) => {
-  const recipe = list[0];
-  const recipeId = recipe.recipeId;
-  const menuData = recipe.recipeMaterial;
+const AddRecipeButtonContainer = ({ recipe }) => {
+  const recipeId = recipe.id;
+  const menuData = recipe.materials;
 
   const [wasRegistered, setWasRegistered] = useState(false);
   const submit = () => {
