@@ -23,7 +23,7 @@ const ResultRecipeListPresentation = ({ list, keyword, category }) => {
               href={{
                 pathname: "/recipe",
                 query: {
-                  recipeTitle: recipe.title,
+                  recipeId: recipe.id,
                 },
               }}
             >
