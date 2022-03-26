@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-const CardCategoryPresentation = ({ categoryList, name }) => {
+const CardCategoryPresentation = ({ categoryId, name }) => {
   return (
     <Link
       href={{
         pathname: "/result",
         query: {
-          categoryId: categoryList[0].id,
+          categoryId: categoryId,
         },
       }}
     >
