@@ -8,37 +8,6 @@ const ResultRecipeListContainer = () => {
   const [category, setCategory] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-<<<<<<< Updated upstream
-      if (router.query.keyword) {
-        const data = await fetch(
-          "https://forked-mykitchen-backend.herokuapp.com/recipes?keyword=" +
-            router.query.keyword
-        );
-
-        const json = await data.json();
-        setList(json);
-      } else if (router.query.categoryId) {
-        const data = await fetch(
-          "https://forked-mykitchen-backend.herokuapp.com/recipes?category=" +
-            router.query.categoryId
-        );
-
-        const json = await data.json();
-        setList(json);
-
-        // カテゴリ―情報をとってくる
-        const categories = await fetch(
-          "https://forked-mykitchen-backend.herokuapp.com/categories"
-        );
-        const categoriesJson = await categories.json();
-
-        const filteredCategory = categoriesJson.filter(
-          (category) => category.id == router.query.categoryId
-        );
-
-        setCategory(filteredCategory[0].name);
-      }
-=======
       const data = await fetch(
         process.env.NEXT_PUBLIC_API_URL +
           "/recipes?keyword=" +
@@ -46,7 +15,6 @@ const ResultRecipeListContainer = () => {
       );
       const json = await data.json();
       setList(json);
->>>>>>> Stashed changes
     };
     fetchData().catch(console.error);
   }, [router.query.keyword]);
