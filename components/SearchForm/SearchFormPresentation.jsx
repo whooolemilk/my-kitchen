@@ -2,7 +2,11 @@ import IconSearch from "../Icons/IconSearch";
 
 const SearchFormPresentation = ({ keyword, onChange }) => {
   return (
-    <form action="/result" method="get" className="flex screen mx-4 my-3">
+    <form
+      action="/result"
+      method="get"
+      className="flex screen mx-4 my-3 relative z-10"
+    >
       <input
         name="keyword"
         type="search"
