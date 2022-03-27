@@ -3,11 +3,18 @@ import Link from "next/link";
 import IconYen from "../Icons/IconYen";
 import IconClock from "../Icons/IconClock";
 
-const RecipeListPresentation = ({ title, list, description }) => {
+const RecipeListPresentation = ({ id, title, list, description }) => {
   return (
     <>
-      <div className="w-full h-48 bg-ocher-100">グラフィック画像が入るよ</div>
-      <h1 className="text-2xl font-bold mx-5 mt-3">{title}</h1>
+      <div className="w-full h-48">
+        <Image
+          src={"/" + id + ".png"}
+          width={800}
+          height={400}
+          alt="title-img"
+        ></Image>
+      </div>
+      <h1 className="text-2xl font-bold mx-5 mt-4">{title}</h1>
       <p className="mx-5 my-2">{description}</p>
       <ul className="divide-y divide-gray-300">
         {list.map((recipe, i) => (
@@ -52,7 +59,7 @@ const RecipeListPresentation = ({ title, list, description }) => {
                 }}
               >
                 <a>
-                  <button className="bg-ocher-300 px-24 py-4 rounded-full text-white font-bold">
+                  <button className="bg-yellow-400 px-24 pb-4 pt-3 rounded-full text-yellow-900 font-bold">
                     レシピの詳細を見る
                   </button>
                 </a>
