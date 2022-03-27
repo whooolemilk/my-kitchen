@@ -36,6 +36,7 @@ const RecipeListContainer = () => {
 
   return (
     <RecipeListPresentation
+      id={router.query.categoryId}
       title={title}
       list={list}
       description={router.query.description}
