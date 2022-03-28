@@ -11,7 +11,7 @@ const AddRecipeButtonPresentation = ({ wasRegistered, onClick }) => {
           className="fixed bottom-24 right-4 w-20 h-20 text-center rounded-full border-orange-400 border-2 bg-white"
         >
           <IconValidSpoonFork />
-          <p className="text-xs font-bold text-orange-400"> たべる</p>
+          <p className="text-xs font-bold text-orange-400">つくる</p>
         </button>
       ) : (
         <button
@@ -20,7 +20,7 @@ const AddRecipeButtonPresentation = ({ wasRegistered, onClick }) => {
           className="fixed bottom-24 right-4 w-20 h-20 text-center rounded-full border-gray-400 border-2 bg-white"
         >
           <IconInvalidSpoonFork />
-          <p className="text-xs font-bold text-gray-400"> たべる</p>
+          <p className="text-xs font-bold text-gray-400">つくる</p>
         </button>
       )}
     </>
