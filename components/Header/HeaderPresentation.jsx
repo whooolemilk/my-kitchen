@@ -1,6 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
 import IconReturn from "../Icons/IconReturn";
-import LogoMykitchen from "../Icons/LogoMykitchen";
 import { useRouter } from "next/router";
 
 const HeaderPresentation = () => {
@@ -18,7 +18,14 @@ const HeaderPresentation = () => {
         )}
         <Link href="/" passHref>
           <a className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <LogoMykitchen />
+            <div className="w-40 mt-1">
+              <Image
+                src="/MYKITCHEN.png"
+                width={200}
+                height={30}
+                alt="logo-image"
+              ></Image>
+            </div>
           </a>
         </Link>
 
