@@ -1,8 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🍴 my-kitchen
+![slide-12](https://user-images.githubusercontent.com/74092547/160334469-dd60efe9-167d-40af-ba14-20c0cf906efa.png)
 
-## Getting Started
+![slide (11)](https://user-images.githubusercontent.com/74092547/160334800-085c4fa0-031f-44e6-ac95-88da77aa8989.png)
 
-First, run the development server:
+[https://my-kitchen-steel.vercel.app/](https://my-kitchen-steel.vercel.app/)  
+※モバイルファーストなので、スマホサイズで見てください:eyes:
+
+## 🛠️ Setup
+yarnかnpmでお願いします!
+
+```bash
+npm install
+# or
+yarn install
+```
+
+## :sparkling_heart: Getting Started
+### :dizzy: 実行
+以下のコマンドで、開発サーバーを実行します
 
 ```bash
 npm run dev
@@ -10,25 +25,20 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[http://localhost:3000](http://localhost:3000)を開いて、結果を確認します。
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### :hand: 終了
+以下のコマンドで、開発サーバーを終了します
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```shell
+ctl + c
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### :alien: 様子がおかしいとき
 
-## Learn More
+バックエンドが落ちているかもしれません！
 
-To learn more about Next.js, take a look at the following resources:
+[https://forked-mykitchen-backend.herokuapp.com/](https://forked-mykitchen-backend.herokuapp.com/)にアクセスして、数分待ってもらうと治るかもです！
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## :relaxed: Deploy
+[Vercel](https://vercel.com/)
