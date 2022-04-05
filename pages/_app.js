@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
+        <title>MYKITCHEN</title>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
