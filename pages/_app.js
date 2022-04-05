@@ -1,14 +1,22 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import Layout from "../components/layout";
+import Seo from "../components/Seo/Seo";
 
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>MYKITCHEN</title>
+        {/* <title>MYKITCHEN</title>
         <meta property="description" content="MYKITCHENNNN" />
-        <meta property="og:title" content="MYKITCHEN" />
+        <meta property="og:title" content="MYKITCHEN" /> */}
+        <Seo
+          pageTitle={"site title"}
+          pageDescription={"site description"}
+          pageImg={"https://demo.com"}
+          pageImgWidth={1280}
+          pageImgHeight={960}
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
