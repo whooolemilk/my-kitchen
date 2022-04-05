@@ -7,6 +7,8 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Head>
         <title>MYKITCHEN</title>
+        <meta property="description" content="MYKITCHENNNN" />
+        <meta property="og:title" content="MYKITCHEN" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
