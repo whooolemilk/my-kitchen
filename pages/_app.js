@@ -23,11 +23,11 @@ function MyApp({ Component, pageProps }) {
           url: "https://my-kitchen-steel.vercel.app/",
           images: [
             {
-              url: "https://my-kitchen-steel.vercel.app/ogp.png",
+              url: "https://my-kitchen-steel.vercel.app/ogp.jpg",
               width: 800,
               height: 600,
               alt: "ogp-img",
-              type: "image/png",
+              type: "image/jpeg",
             },
           ],
         }}
