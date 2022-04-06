@@ -50,7 +50,7 @@ function MyApp({ Component, pageProps }) {
           url: "https://my-kitchen-steel.vercel.app/",
           images: [
             {
-              url: "../public/ogp.png",
+              url: "https://my-kitchen-steel.vercel.app/ogp.png",
               width: 800,
               height: 800,
               alt: "ogp-img",
