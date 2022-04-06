@@ -48,14 +48,14 @@ function MyApp({ Component, pageProps }) {
           description: "testtest",
           site_name: "MYKITCHEN",
           url: "https://my-kitchen-steel.vercel.app/",
-          // TODO OGP画像
-          // images: [
-          //  {
-          //   url: <画像URL>,
-          //   width: 800,
-          //   height: 600,
-          //   alt: <Alt>,
-          //  }],
+          images: [
+            {
+              url: "../public/ogp_twitter.png",
+              width: 800,
+              height: 800,
+              alt: "ogp-img",
+            },
+          ],
         }}
       />
       <Component {...pageProps} />
