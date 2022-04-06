@@ -1,10 +1,37 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import Layout from "../components/layout";
+import { DefaultSeo, NextSeo } from "next-seo";
 
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
+      <DefaultSeo
+        defaultTitle="MYKITCHEN"
+        canonical="https://my-kitchen-steel.vercel.app/"
+        description="test"
+        twitter={{
+          handle: "@handle",
+          site: "@site",
+          cardType: "summary_large_image",
+        }}
+        openGraph={{
+          type: "website",
+          title: "MYKITCHEN",
+          description: "testtest",
+          site_name: "MYKITCHEN",
+          url: "https://my-kitchen-steel.vercel.app/",
+          images: [
+            {
+              url: "https://my-kitchen-steel.vercel.app/ogp.jpg",
+              width: 800,
+              height: 600,
+              alt: "ogp-img",
+              type: "image/jpeg",
+            },
+          ],
+        }}
+      />
       <Head>
         <link
           rel="apple-touch-icon"
