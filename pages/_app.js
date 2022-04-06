@@ -1,22 +1,12 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import Layout from "../components/layout";
-import Seo from "../components/Seo/Seo";
+import { DefaultSeo, NextSeo } from "next-seo";
 
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        {/* <title>MYKITCHEN</title>
-        <meta property="description" content="MYKITCHENNNN" />
-        <meta property="og:title" content="MYKITCHEN" /> */}
-        <Seo
-          pageTitle={"site title"}
-          pageDescription={"site description"}
-          pageImg={"https://demo.com"}
-          pageImgWidth={1280}
-          pageImgHeight={960}
-        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -43,6 +33,31 @@ function MyApp({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#ffc40d" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
+      <DefaultSeo
+        defaultTitle="MYKITCHEN"
+        canonical="https://my-kitchen-steel.vercel.app/"
+        description="test"
+        twitter={{
+          handle: "@handle",
+          site: "@site",
+          cardType: "summary_large_image",
+        }}
+        openGraph={{
+          type: "website",
+          title: "MYKITCHEN",
+          description: "testtest",
+          site_name: "MYKITCHEN",
+          url: "https://my-kitchen-steel.vercel.app/",
+          // TODO OGP画像
+          // images: [
+          //  {
+          //   url: <画像URL>,
+          //   width: 800,
+          //   height: 600,
+          //   alt: <Alt>,
+          //  }],
+        }}
+      />
       <Component {...pageProps} />
     </Layout>
   );
