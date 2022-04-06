@@ -6,6 +6,32 @@ import { DefaultSeo, NextSeo } from "next-seo";
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
+      <DefaultSeo
+        defaultTitle="MYKITCHEN"
+        canonical="https://my-kitchen-steel.vercel.app/"
+        description="test"
+        twitter={{
+          handle: "@handle",
+          site: "@site",
+          cardType: "summary_large_image",
+        }}
+        openGraph={{
+          type: "website",
+          title: "MYKITCHEN",
+          description: "testtest",
+          site_name: "MYKITCHEN",
+          url: "https://my-kitchen-steel.vercel.app/",
+          images: [
+            {
+              url: "https://my-kitchen-steel.vercel.app/ogp.png",
+              width: 800,
+              height: 600,
+              alt: "ogp-img",
+              type: "image/png",
+            },
+          ],
+        }}
+      />
       <Head>
         <link
           rel="apple-touch-icon"
@@ -33,31 +59,6 @@ function MyApp({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#ffc40d" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <DefaultSeo
-        defaultTitle="MYKITCHEN"
-        canonical="https://my-kitchen-steel.vercel.app/"
-        description="test"
-        twitter={{
-          handle: "@handle",
-          site: "@site",
-          cardType: "summary_large_image",
-        }}
-        openGraph={{
-          type: "website",
-          title: "MYKITCHEN",
-          description: "testtest",
-          site_name: "MYKITCHEN",
-          url: "https://my-kitchen-steel.vercel.app/",
-          images: [
-            {
-              url: "https://my-kitchen-steel.vercel.app/ogp.png",
-              width: 800,
-              height: 800,
-              alt: "ogp-img",
-            },
-          ],
-        }}
-      />
       <Component {...pageProps} />
     </Layout>
   );
