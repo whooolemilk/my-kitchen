@@ -4,9 +4,10 @@ import IconYenSmall from "../Icons/IconYenSmall";
 import IconExternalLink from "../Icons/IconExternalLink";
 import Link from "next/link";
 import AddRecipeButtonContainer from "../AddRecipeButton/AddRecipeButtonContainer";
+import EmptyDataContainer from "../EmptyData/EmptyDataContainer";
 const RecipePresentation = ({ recipe }) => {
   if (recipe === undefined) {
-    return <div>No Items</div>;
+    return <EmptyDataContainer />;
   }
   return (
     <>
